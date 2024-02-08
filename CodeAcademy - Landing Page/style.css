@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  height: 700px;
+  /* border: 1px solid red; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+form label {
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+form input[type="text"],
+input[type="password"] {
+  margin: 5px 0;
+  height: 55px;
+  border: 0.5px solid #b8b8b85d;
+  border-radius: 3px;
+  padding: 0 15px;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+form a {
+  margin: 10px 0;
+  font-weight: 600;
+  color: blueviolet;
+  text-decoration: none;
+}
+
+form input[type="submit"] {
+  height: 50px;
+  background: blueviolet;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  color: white;
+}
+
+.footer h4 {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.social-media {
+  margin: 20px 0;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media img {
+  width: 15%;
+  border: 0.5px solid #b8b8b85d;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.footer a {
+  margin-top: 5px;
+  color: blueviolet;
+  font-weight: 400;
+  float: right;
+}
+
+.footer a span {
+  font-weight: 600;
+  float: right;
+  text-decoration: underline;
+}
