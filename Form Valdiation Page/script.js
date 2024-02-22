@@ -21,7 +21,7 @@ function checkInput() {
     setSuccess(username);
   }
 
-  if (emailVal === " ") {
+  if (emailVal === "") {
     setError(email, "Email cannot be blank");
   } else if (!isEmail(emailVal)) {
     setError(email, "Not a valid Email");

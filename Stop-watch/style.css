@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.clock {
+  text-align: center;
+  width: 60%;
+  background: url(images/background.png);
+  background-size: cover;
+}
+
+.display {
+  font-size: 50px;
+  margin: 30px 0;
+  color: white;
+}
+
+.buttons img {
+  width: 100px;
+  margin: 30px 20px;
+  cursor: pointer;
+}
+
+.buttons img:hover {
+  opacity: 0.7;
+}
