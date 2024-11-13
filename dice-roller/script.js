@@ -1,25 +1,26 @@
 const btnEl = document.querySelector(".btn");
 const diceEl = document.querySelector(".dice");
-const hisEl = document.querySelector(".historys");
+const ulEl = document.querySelector(".historys");
 
-let historyList = [];
+let historyEl = [];
 
-function diceroll() {
+function diceRoll() {
   const ranNum = Math.floor(Math.random() * 6) + 1;
   const diceFace = cubeFinder(ranNum);
   diceEl.innerHTML = diceFace;
-  historyList.push(ranNum);
-  updateRollHistory();
+  historyEl.push(ranNum);
+  updateDiceHistory();
 }
 
-function updateRollHistory() {
-  hisEl.innerHTML = "";
-  for (i = 0; i < historyList.length; i++) {
-    const liEl = document.createElement("li");
-    liEl.innerHTML = `Roll Num ${i + 1} : <span>${cubeFinder(
-      historyList[i]
+function updateDiceHistory() {
+  ulEl.innerHTML = ``;
+
+  for (i = 0; i < historyEl.length; i++) {
+    const listItem = document.createElement("li");
+    listItem.innerHTML = `Roll Number ${i + 1} <span>${cubeFinder(
+      historyEl[i]
     )}</span>`;
-    hisEl.appendChild(liEl);
+    ulEl.appendChild(listItem);
   }
 }
 
@@ -47,5 +48,5 @@ btnEl.addEventListener("click", () => {
   setTimeout(() => {
     diceEl.classList.remove("roll-animation");
   }, 1000);
-  diceroll();
+  diceRoll();
 });
